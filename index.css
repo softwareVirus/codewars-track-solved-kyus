@@ -1,0 +1,121 @@
+
+
+html {
+  background-color: #262729;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+#navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vh;
+}
+
+#codewars-logo {
+  width: fit-content;
+}
+
+#search-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#search {
+  background-color: #262729;
+  border: 2px solid white;
+  height: 32px;
+  border-radius: 16px;
+  padding-left: 15px;
+  padding-top: 2px;
+  font-size: 1.25rem;
+  color: white;
+}
+
+#search::placeholder {
+  font-size: 1.25rem;
+}
+
+#typing-selector > p,
+#title > p {
+  color: white;
+  font-size: 1.75rem;
+}
+
+img {
+  animation: fadeIn 1.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hide-element {
+  display: none !important;
+}
+
+#loading-section > h1 {
+  position: absolute;
+  top: calc(50% - 5rem);
+  left: calc(50% - 6rem);
+  font-size: 2.5rem;
+  color: white;
+}
+
+#user-title {
+    color: white;
+    text-align: center;
+}
+
+tr {
+    display: flex;
+}
+td {
+    border: 1px solid white;
+    min-width: 150px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#display-number-of-kyus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: fit-content;
+}
+
+#home-page-button-box {
+    width: 100%;
+}
+
+button {
+    height: 32px;
+    background-color: white;
+    border: 1px solid #262729;
+    color:#262729;
+    border-radius: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s all ease-in;
+}
+
+button:hover {
+    background-color: #262729;
+    border-color: white;
+    color: white;
+}

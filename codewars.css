@@ -1,0 +1,329 @@
+
+/* codewars kyu logo css is taken from www.codewars.com */
+
+:host,
+:root {
+  --color-ui-bg: var(--color-gray-200);
+  --color-ui-text: var(--color-gray-800);
+  --color-ui-text-lc: var(--color-gray-700);
+  --color-ui-text-hc: var(--color-gray-900);
+  --color-ui-text-bright: var(--color-gray-700);
+  --color-ui-border: var(--color-gray-300);
+  --color-ui-text-heading: var(--color-gray-900);
+  --color-ui-text-heading-small: var(--color-gray-700);
+  --color-ui-link-text: #555;
+  --color-ui-link-text-hover: #2889cc;
+  --color-ui-link-text-active: #4b4b4b;
+  --color-ui-link-text-disabled: var(--color-gray-600);
+  --color-ui-alt-link-text: #2889cc;
+  --color-ui-alt-link-text-hover: #6fbeff;
+  --color-ui-alt-link-text-active: #bb432c;
+  --color-ui-dark-text: var(--color-gray-700);
+  --color-ui-blockquote-border: var(--color-ui-border);
+  --color-ui-code-bg: #fdfdfd;
+  --color-ui-section: #ececee;
+  --color-ui-form-placeholder-text: #b7b7b7;
+  --color-ui-users-tabs-bg: var(--color-gray-300);
+  --color-donut-chart-bg: rgba(0, 0, 0, 0.05);
+  --color-ui-hover-important: var(--color-red-700);
+  --color-ui-success: var(--color-green-800);
+  --color-rank-white: #e6e6e6;
+  --color-rank-white-text: #888888;
+  --color-rank-yellow: #ecb613;
+  --color-rank-purple: #866cc7;
+  --color-rank-blue: #1f87e7;
+  --color-rank-black: #555;
+  --color-rank-black-dark: #333;
+  --color-rank-black-text: #333;
+  --color-rank-red: #bb432c;
+  --color-legacy-black: #131414;
+  --color-legacy-white: #fff;
+  --color-legacy-red: #b1361e;
+  --color-legacy-unsat-red: #bb432c;
+  --color-legacy-gray: #c9c9c9;
+  --color-legacy-light-gray: #ebebeb;
+  --color-legacy-green: #7c9a44;
+  --color-legacy-yellow: #dfb020;
+  --color-legacy-main-color: #237cce;
+  --color-legacy-info-color: rgba(255, 255, 255, 0.25);
+  --color-legacy-alert-color: #c05c48;
+  --color-legacy-success-color: #5f8120;
+  --color-legacy-warning-color: #c28222;
+  --color-legacy-notice-color: #2f7db7;
+  --color-legacy-notify-color: #4b66ce;
+  --color-legacy-disabled-color: #616161;
+  --color-legacy-subtle-lighten: rgba(255, 255, 255, 0.05);
+  --color-legacy-faint-lighten: rgba(255, 255, 255, 0.03);
+  --color-legacy-lighten: rgba(255, 255, 255, 0.125);
+  --color-legacy-brighten: rgba(255, 255, 255, 0.3);
+  --color-legacy-heavy-brighten: rgba(255, 255, 255, 0.5);
+  --color-legacy-low-light: rgba(0, 0, 0, 0.1);
+  --color-legacy-low-high-light: rgba(255, 255, 255, 0.05);
+  --color-legacy-low-high-light-solid: #3c3c3c;
+  --color-legacy-high-light: rgba(255, 255, 255, 0.1);
+  --color-legacy-darken: rgba(0, 0, 0, 0.2);
+  --color-legacy-darken-purple: rgba(23, 19, 48, 0.2);
+  --color-legacy-lighten-purple: rgba(82, 82, 158, 0.2);
+  --color-legacy-dim: rgba(0, 0, 0, 0.4);
+  --color-legacy-ultra-dim: rgba(0, 0, 0, 0.625);
+  --color-legacy-blackout-txt: rgba(20, 20, 20, 0.7);
+  --color-legacy-blackout: rgba(20, 20, 20, 0.96);
+  --color-legacy-dt-txt-color: #efefef;
+  --color-legacy-dt-bright-txt-color: white;
+  --color-legacy-dt-dark-txt-color: var(--color-legacy-gray);
+  --color-legacy-dt-darker-txt-color: #b0b0b0;
+  --color-legacy-dt-background: #303133;
+  --color-legacy-dt-link-color: #c0c0c0;
+  --color-legacy-dt-alt-link-color: #6795de;
+  --color-legacy-dt-active-link-color: var(--color-legacy-light-gray);
+  --color-legacy-dt-alt-active-link-color: var(--color-legacy-unsat-red);
+  --color-legacy-dt-input-background: rgba(0, 0, 0, 0.1);
+  --color-legacy-dt-dark-color: #282828;
+  --color-legacy-dt-darker-color: #1e1e1e;
+  --color-legacy-dt-dark-color-highlight: #353535;
+  --color-legacy-dt-light-color: var(--color-legacy-white);
+  --color-legacy-dt-back-color: var(--color-legacy-dt-dark-color);
+  --color-legacy-dt-low-contrast-back-color: var(
+    --color-legacy-dt-darker-color
+  );
+  --color-legacy-dt-high-contrast-back-color: var(
+    --color-legacy-dt-dark-color-highlight
+  );
+  --color-legacy-dt-border-color: var(--color-legacy-high-light);
+  --color-legacy-disabled-link-color: #7d7d7d;
+  --color-legacy-alt-active-link-color: #c9bae4;
+  --panel-border-radius: 10px;
+  --color-ui-tag-bg: rgba(255, 255, 255, 0.125);
+  --color-ui-tag-text: rgba(255, 255, 255, 0.6);
+  --color-small-hex-bg: #131414;
+  --color-inner-small-hex-bg: #181919;
+  --rank-hex-filter: none;
+  --color-ui-white-rank-text: #e6e6e6;
+  --color-ui-issue-label-text: var(--color-ui-text-heading);
+  --color-ui-question-label-bg: var(--color-contrast-300);
+  --color-ui-question-label-text: var(--color-ui-text-heading);
+  --color-rank-black-hex: var(--color-rank-black);
+  --color-ui-resolved-label: var(--color-contrast-300);
+}
+:root {
+  --color-ui-tag-bg: var(--color-gray-500);
+  --color-ui-tag-text: var(--color-gray-200);
+  --rank-hex-filter: drop-shadow(0 0 1px #999);
+  --color-small-hex-bg: var(--color-gray-100);
+  --color-inner-small-hex-bg: var(--color-gray-100);
+  --color-ui-white-rank-text: var(--color-gray-500);
+  --color-ui-issue-label-bg: var(--color-legacy-red);
+  --color-ui-issue-label-text: var(--color-gray-50);
+  --color-ui-question-label-bg: var(--color-gray-400);
+  --color-ui-question-label-text: var(--color-gray-100);
+  --color-rank-black-hex: var(--color-rank-black-dark);
+  --color-ui-resolved-label: var(--color-gray-400);
+}
+
+.small-hex {
+  height: 26px;
+  width: 15px;
+  background-color: var(--color-legacy-unsat-red);
+  color: #131414;
+  position: relative;
+  margin-right: 8px;
+  margin-left: 8px;
+  text-align: center;
+  font-weight: 700;
+  z-index: 1;
+  text-shadow: none;
+  line-height: 28px;
+  font-size: 12px;
+  filter: var(--rank-hex-filter);
+}
+.small-hex span {
+  z-index: 2;
+  position: relative;
+}
+.small-hex:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-right: 8px solid var(--color-legacy-unsat-red);
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  position: absolute;
+  left: -8px;
+  z-index: 0;
+  -moz-transform: scale(0.9999);
+}
+.small-hex:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  right: -8px;
+  top: 0;
+  border-left: 8px solid var(--color-legacy-unsat-red);
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  z-index: 0;
+  -moz-transform: scale(0.9999);
+}
+.small-hex.is-wide {
+  width: 52px;
+}
+.small-hex.is-extra-wide {
+  width: 68px;
+}
+.small-hex.is-long {
+  width: 88px;
+}
+.small-hex.is-green {
+  background-color: var(--color-legacy-green);
+}
+.small-hex.is-green:before {
+  border-right-color: var(--color-legacy-green);
+}
+.small-hex.is-green:after {
+  border-left-color: var(--color-legacy-green);
+}
+.small-hex.is-white {
+  background-color: #fffc;
+}
+.small-hex.is-white:before {
+  border-right-color: #fffc;
+}
+.small-hex.is-white:after {
+  border-left-color: #fffc;
+}
+.small-hex.bg-contrast-300 {
+  background-color: var(--color-legacy-lighten);
+  color: #fff9;
+}
+.small-hex.bg-contrast-300:before {
+  border-right-color: var(--color-legacy-lighten);
+}
+.small-hex.bg-contrast-300:after {
+  border-left-color: var(--color-legacy-lighten);
+}
+.small-hex.is-white-rank {
+  background-color: var(--color-rank-white);
+  color: var(--color-legacy-blackout-txt);
+}
+.small-hex.is-white-rank:before {
+  border-right-color: var(--color-rank-white);
+}
+.small-hex.is-white-rank:after {
+  border-left-color: var(--color-rank-white);
+}
+.small-hex.is-black-rank {
+  background-color: var(--color-rank-black-hex);
+  color: var(--color-legacy-white);
+}
+.small-hex.is-black-rank:before {
+  border-right-color: var(--color-rank-black-hex);
+}
+.small-hex.is-black-rank:after {
+  border-left-color: var(--color-rank-black-hex);
+}
+.small-hex.is-yellow-rank {
+  background-color: var(--color-rank-yellow);
+  color: var(--color-legacy-blackout-txt);
+}
+.small-hex.is-yellow-rank:before {
+  border-right-color: var(--color-rank-yellow);
+}
+.small-hex.is-yellow-rank:after {
+  border-left-color: var(--color-rank-yellow);
+}
+.small-hex.is-blue-rank {
+  background-color: var(--color-rank-blue);
+  color: var(--color-legacy-blackout-txt);
+}
+.small-hex.is-blue-rank:before {
+  border-right-color: var(--color-rank-blue);
+}
+.small-hex.is-blue-rank:after {
+  border-left-color: var(--color-rank-blue);
+}
+.small-hex.is-purple-rank {
+  background-color: var(--color-rank-purple);
+  color: var(--color-legacy-blackout-txt);
+}
+.small-hex.is-purple-rank:before {
+  border-right-color: var(--color-rank-purple);
+}
+.small-hex.is-purple-rank:after {
+  border-left-color: var(--color-rank-purple);
+}
+.inner-small-hex {
+  height: 22px;
+  width: 13px;
+  background-color: #181919;
+  position: relative;
+  margin-right: 6px;
+  text-align: center;
+  line-height: 22px;
+  z-index: 1;
+  text-shadow: none;
+  margin-left: 1px;
+  top: 2px;
+  font-size: 11px;
+  color: var(--color-legacy-red);
+}
+.inner-small-hex span {
+  z-index: 2;
+  position: relative;
+}
+.inner-small-hex:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-right: 6px solid #181919;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  position: absolute;
+  left: -6px;
+  z-index: 0;
+  -moz-transform: scale(0.9999);
+}
+.inner-small-hex:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  right: -6px;
+  top: 0;
+  border-left: 6px solid #181919;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  -moz-transform: scale(0.9999);
+  z-index: 2;
+}
+.is-wide .inner-small-hex {
+  width: 48px;
+}
+.is-extra-wide .inner-small-hex {
+  width: 64px;
+}
+.is-long .inner-small-hex {
+  width: 84px;
+}
+.is-green .inner-small-hex {
+  color: var(--color-legacy-green);
+}
+.is-white .inner-small-hex {
+  color: var(--color-legacy-white);
+}
+.is-white-rank .inner-small-hex {
+  color: #e6e6e6;
+}
+.is-red-rank .inner-small-hex {
+  color: var(--color-rank-red);
+}
+.is-black-rank .inner-small-hex {
+  color: var(--color-rank-black-text);
+}
+.is-yellow-rank .inner-small-hex {
+  color: var(--color-rank-yellow);
+}
+.is-blue-rank .inner-small-hex {
+  color: var(--color-rank-blue);
+}
+.is-purple-rank .inner-small-hex {
+  color: var(--color-rank-purple);
+}
