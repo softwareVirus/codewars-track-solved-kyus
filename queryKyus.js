@@ -32,9 +32,7 @@ const title = "Query Number of Solved Kyus on Codewars";
                 return;
             }
             const navbar = document.getElementById('navbar')
-            const loading = document.getElementById('loading-section')
             navbar.className = 'hide-element'
-            loading.className = ''
             let link = document.URL
             console.log(' '+link)
             window.location.href = `kyuList.html?user=${event.target.value}`
