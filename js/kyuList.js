@@ -29,7 +29,7 @@ async function main() {
         if(index === data.length) {
             let number_of_solved_kyus = document.getElementsByClassName('number-of-solved')
             kyus.forEach((item,index) => {
-                number_of_solved_kyus.item(7-index).textContent = item + ' kyus solved'
+                number_of_solved_kyus.item(7-index).textContent = item + ' katas solved'
             })
             break
         }
