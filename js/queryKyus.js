@@ -1,5 +1,5 @@
 const app_title = document.getElementById("title");
-const title = "Query Number of Solved Kyus on Codewars";
+const title = "Query Number of Solved Katas on Codewars";
 
 (async () => {
   //animation to write the letters of title one by one
