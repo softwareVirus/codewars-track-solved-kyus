@@ -12,9 +12,9 @@ If number of solved problems is 430, then the query time is almost 215 seconds, 
 
 ## Screenshots
 ### Home Page
-![Alt home page](./home_page.png)
+![Alt home page](./assets/home_page.png)
 ### Result Page
-![Alt result page](./result_page.png)
+![Alt result page](./assets/result_page.png)
 ## Getting Started
 
 ### Installing
