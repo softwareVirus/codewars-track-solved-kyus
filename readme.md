@@ -1,5 +1,5 @@
 # Codewars Track Solved Kyus
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 The project helps to track your progress to solving kyus
 
 ## Description
