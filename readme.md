@@ -6,8 +6,8 @@ The project helps to track your progress to solving kyus
 
 The aim of project is that help to Nimble students for tracking number of solved problems kyu by kyu. It will display as a table. The time of query increases to be directly proportional to the number of problems you solve.
 
-Example calculation 
-    If number of solved problems is 430, then the query time is almost 215 seconds, so 3 min 30 seconds
+### Example calculation 
+If number of solved problems is 430, then the query time is almost 215 seconds, so 3 min 30 seconds
 
 ## Getting Started
 
