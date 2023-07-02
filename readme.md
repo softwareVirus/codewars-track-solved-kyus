@@ -10,6 +10,11 @@ The aim of project is that help to Nimble students for tracking number of solved
 ### Example calculation 
 If number of solved problems is 430, then the query time is almost 215 seconds, so 3 min 30 seconds
 
+## Screenshots
+### Home Page
+![Alt home page](./home_page.png)
+### Result Page
+![Alt result page](./result_page.png)
 ## Getting Started
 
 ### Installing
