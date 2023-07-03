@@ -5,8 +5,7 @@ const button = document.getElementsByTagName('button').item(0)
 button.addEventListener('click' ,() => {
     window.location.href = 'index.html'
 })
-async function main() {
-    
+async function main() { 
     let page = 0
     let data = []
     let user_data = await fetch(`https://www.codewars.com/api/v1/users/${user}/code-challenges/completed?page=${page}`)
