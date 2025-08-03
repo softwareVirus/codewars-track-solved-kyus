@@ -21,17 +21,19 @@ async function main() {
     console.log(data.length)
     let index = 0
     while(1) {
-        let kyu_data = await fetch(`https://www.codewars.com/api/v1/code-challenges/${data[index].id}`)
-        kyu_data = await kyu_data.json()
-        kyus[Math.abs(kyu_data.rank.id)-1]++
-        index++
-        if(index === data.length) {
-            let number_of_solved_kyus = document.getElementsByClassName('number-of-solved')
-            kyus.forEach((item,index) => {
-                number_of_solved_kyus.item(7-index).textContent = item + ' katas solved'
-            })
-            break
-        }
+        try {
+            let kyu_data = await fetch(`https://www.codewars.com/api/v1/code-challenges/${data[index].id}`)
+            kyu_data = await kyu_data.json()
+            kyus[Math.abs(kyu_data.rank.id)-1]++
+            index++
+            if(index === data.length) {
+                let number_of_solved_kyus = document.getElementsByClassName('number-of-solved')
+                kyus.forEach((item,index) => {
+                    number_of_solved_kyus.item(7-index).textContent = item + ' katas solved'
+                })
+                break
+            }
+        } catch {}
     }
     let title = document.getElementById('user-title')
     title.textContent = `${user} History`
