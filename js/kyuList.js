@@ -20,21 +20,26 @@ async function main() {
     }
     console.log(data.length)
     let index = 0
-    while(1) {
-        try {
-            let kyu_data = await fetch(`https://www.codewars.com/api/v1/code-challenges/${data[index].id}`)
-            kyu_data = await kyu_data.json()
-            kyus[Math.abs(kyu_data.rank.id)-1]++
-            index++
-            if(index === data.length) {
-                let number_of_solved_kyus = document.getElementsByClassName('number-of-solved')
-                kyus.forEach((item,index) => {
-                    number_of_solved_kyus.item(7-index).textContent = item + ' katas solved'
-                })
-                break
-            }
-        } catch {}
+    while (index < data.length) {
+    try {
+        let response = await fetch(`https://www.codewars.com/api/v1/code-challenges/${data[index].id}`);
+        let kyu_data = await response.json();
+
+        if (kyu_data.rank && typeof kyu_data.rank.id === 'number') {
+            kyus[Math.abs(kyu_data.rank.id) - 1]++;
+        }
+
+        // Update frontend for the current index
+        kyus.forEach((item, i) => {
+            const element = number_of_solved_kyus.item(7 - i);
+            if (element) element.textContent = `${item} katas solved`;
+        });
+    } catch (err) {
+        console.warn(`Failed to fetch challenge at index ${index}:`, err);
+    } finally {
+        index++;
     }
+}
     let title = document.getElementById('user-title')
     title.textContent = `${user} History`
     document.getElementById('display-number-of-kyus').className = ''
